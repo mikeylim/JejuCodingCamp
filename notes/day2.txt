@@ -1,0 +1,86 @@
+[]
+•
+*
+-
+
+[[Jeju Coding Base Camp] -- DAY 2
+
+<CSS - position>
+
+- Default value for every element = position: static; 기본값
+- position: relative; = 원래의 (static의) 위치를 기준으로 top, left 세팅된 만큼 위치 이동 (다른 element의 위치에 영향 안받음)
+- position: absolute; = 브라우저 왼쪽 위를 기준으로 절대 위치
+- position: absolute; 인 element가 부모의 위치를 따라가려면, position: static; 만 아니면 됨 (보통 부모 {position: relative}를 씀) ***
+    -> 가장 밖에있음 at the front
+- position: fixed; = sticks at a certain position set by left and top
+- z-index: 0; = default = 더 높은 숫자가 더 위에 있음.
+* 하나의 element에 여러 css class가 지정되있으면, 앞의 class부터 적용됨
+* position: fixed; 와 position: absolute; 이 적용되어 있으면 width: 100%가 필요함
+
+<CSS - animation>
+- transition: 1s; = gives a second before changes 수치로 표현되는 값에 딜레이 줌.
+- transition-delay
+- transition-duration
+- transition-property
+- transition-timing-function
+
+https://www.hongkiat.com/blog/svg-animations/
+- animation = 복잡한 것들
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: my-ani;
+* transition: left를 기준 // transform: 중간을 기준
+
+• CSS Flex Layout
+<div class="container">
+	<div class="item">helloflex</div>
+	<div class="item">abc</div>
+	<div class="item">helloflex</div>
+</div>
+- 부모인 .container 안에 .item들이 있음
+- display: inline-flex; = flex속성을 갖고있지만 inline이다
+
+* flex-direction
+- flex-direction: row; = default 가로
+- flex-direction: column; = 세로
+- flex-direction: row-reverse; = 가로 반대
+- flex-direction: column-reverse; = 세로 반대
+
+* flex-wrap = 컨테이너가 더 이상 아이템들을 한 줄에 담을 여유 공간이 없을 때 아이템 줄바꿈을 설정 
+- flex-wrap: nowrap;
+- flex-wrap: wrap;
+- flex-wrap: wrap-reverse;
+
+* flex-flow: 'flex-direction' 'flex-wrap'
+
+* justify
+- justify-content: flex-start;
+- justify-content: flex-end;
+- justify-content: center;
+- justify-content: space-between;
+- justify-content: space-around;
+
+** 디폴트 시작점 =\ 왼쪽
+
+* align
+- align-items: flex-start;
+- align-items: flex-end;
+- align-items: center;
+- align-items: baseline;
+
+- align-content: stretch;
+- align-content: flex-start;
+- align-content: flex-end;
+- align-content: center;
+- align-content: space-between;
+- align-content: space-around;
+- align-content: space-evenly;
+
+** centering everything!!! 
+- justify-content: center;
+- align-item: center;

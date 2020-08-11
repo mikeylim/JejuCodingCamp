@@ -1,0 +1,160 @@
+[]
+•
+*
+-
+
+[[Jeju Coding Base Camp (5 yrs~)]] -- DAY 1
+
+- Full-stack
+- Whole cycle
+
+이호준
+
+URL, 도메인(이름)
+www.naver.com
+
+IP(주소)
+192.188.00
+
+PORT(문)
+www.naver.com:443
+
+- HTML & CSS -> Bootstrap, etc
+|
+- Javascript -> Jquery, etc                   => 프로젝트
+|
+- Python -> Django, etc
+         -> Algorithm
+
+* Buying Bootstrap Template for convinience and look
+
+1. 프로젝트 요구사항 정의
+ • 서비스 기획
+  - 유지보수 계약기간 / 건당 가격
+ • Usecase
+ • 프로젝트 문서
+2. 인프라 구축(서버 세팅) URL 구매 후 연결
+3. Agile한 개발 -- Lean startup
+4. 사용자 피드백 후 다시 1번
+팁) 외주x 프리랜서x 개발자되거나영입o
+
+[환경세팅]
+- Coding용 Text editor를 이용 (Atom in here)
+
+Settings
+emmet - useful for shortcuts
+minimap - sidebar for previewing source code
+atom-beuatifier - reduces code
+script - run code in Atom
+wrap-guide - disable
+
+
+https://www.Codesandbox.io
+https://www.goorm.io/
+
+(서버 환경설정)
+클라우드 서비스 - 서버를 빌려씀
+SaaS - 서비스
+PaaS - 플랫폼
+IaaS - 인프라
+
+   GroomIDE
+
+서버설정 - Ubuntu = free & light / Windows = expensive
+CLI환경(Command Line Interfact) - 터미널을 통해 사용자와 컴퓨터가 상호 작용하는 방식
+
+----------------
+[[02:00PM ~ ]]
+https://studiomeal.com/data/jcb
+
+유준모
+디자이너/개발자
+1분코딩 (YouTube)
+studiomeal@kako.com
+
+
+- Good to know how XHTML (XML) worked before
+
+[HTML]
+<html lang="ko">
+- 간단하게 박스를 만들어 웹페이지를 구성함. (레이아웃)
+- <article> = 큰 컨텐츠의 전체 내용을 단독으로 사용 가능한 엘리먼트 (generally larger than section)
+- <section> = 하나의 주제로 그룹화된 컨텐츠 -- 주된 컨텐츠의 제목을 포함
+- <header> = '머리'
+- <footer> = '바닥'
+    * 보통 article과 section에 header와 footer가 포함됨
+- <nav> = 링크의 묶음 (메인 네비게이션)
+- <aside> = 페이지 내용의 흐름과 관련없는 내용 (사이드바) -- 각주(footnote)은 포함안됨
+- <h1> ... <h6> = Sectioning content의 제목 -- 각 컨텐츠의 가장 큰 제목
+    ex) <h1>집에서 맛있는 피자 만들기</h1>
+        <h2>재료</h2>
+        <h3>고기류</h3>
+        <h3>야채류</h3>
+        <h2>만드는순서</h2>
+
+[CSS]
+• 적용
+ - css 외부파일을 연결시켜서 (우선순위가 <head>의 위치에 따라 순서대로)
+ - <head> 부분에 <style></style> (<style>의 위치에 따라 순서대로)
+ - 인라인 (우선순위가 가장높음)
+ - CSS파일 안에 CSS포함 = @import "foo.css" // 잘 안씀 = deprecated due to speed
+
+• 기본 형태
+body {
+    background-color: red;
+}
+body = 선택자(selector)
+background-color = 속성(property)
+red = 값(value)
+* 2020 트렌드 = id 선택자를 잘 안씀 (Facebook, ...)
+
+- input[type=“text”]
+- .foo > p
+    ex) 
+    <section class=“foo”>
+        <header>
+            <h1>􀫘􀧀􀢲 􀝍􀩓􀗗 􀳖􀩗 􀝅􀙜􀓝</h1>
+            <p>􀪱􀨤􀧀􀢲 􀤔􀑱 􀒳􀳡 􀣻 􀩓􀗗 􀩤􀜐􀜳 􀪺􀤬􀨵􀛽</p>
+        </header>
+        <p>AAAAA</p> <------------------------------------------- .foo > p
+    </section>
+
+- .foo:nth-child(even) 짝수번째 
+- .foo:nth-child(odd) 홀수번째 ()
+- .foo p:nth-child(3n+1) 이런 식으로 수식도 가능, n에는 0부터 1, 2, 3.. 순서대로 대입
+- .foo p:nth-of-type(2) {
+}
+
+* nth-child ---- (자기가 몇번째인지) ***
+* nth-child = tag 종류에 상관없이 순서대로
+* nth-of-type = tag 종류에 상관하여 selector의 종류에 관계하여
+* class 보다 id가 우선순위가 높다
+
+(Reset CSS)
+- http://meyerweb.com/eric/tools/css/reset/
+    Normalize.css
+- https://necolas.github.io/normalize.css/
+- 기본스타일을 초기화 시켜 css 커스터마이징을 쉽게 만듦
+
+
+(CSS Box 모델)
+- box-sizing: content-box (기본값) = margin, border, padding 모두 포함함
+- box-sizing: border-box (2020년엔 Preferred) = width에 border, padding 모두 포함함 
+    ex) div { width: 200px; border: 20px; padding: 10px; } -- div - 140px, border: 20px, padding: 10px
+
+(display:)
+- display: inline; = 텍스트처럼 배치 (가로로 나란히)
+    -> width, height 세팅 불가
+- display: block; = 박스처럼 배치 (세로로 나란히)
+    -> width, height 세팅 가능
+    -> width는 내가 넓어질 수 있는 만큼 최대한 (부모의 크기)
+    -> height는 내가 갖고 있는 콘텐츠의 높이만큼
+    ** display:block 은 자동으로 width를 100% 설정하므로 width를 설정할 필요없음
+- display: inline-block; = Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+- display: none; = 안보이게 하기
+
+(font-size)
+- default font-size: 16px;
+- em: 원래 폰트 사이즈 (default: 내 부모의 폰트 사이즈)
+    ex) 1em = 원래크기 / 2em = 2배크기
+- rem (root element): Root element인 <html>의 폰트 사이즈 기준

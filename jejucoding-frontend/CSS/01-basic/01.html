@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>CSS 기본 선택자 테스트</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="00.css">
+    <style>
+        body {
+            font-size: 30px;
+            /* background-color: red; */
+            background: red;
+        }
+        h1 {
+            /* font-size: 50px; */
+        }
+        .pizza-recipe {
+            color: tomato;
+        }
+        .재료 p {
+            color: white;
+        }
+        h2 {
+            font-size: 100px;
+        }
+        #my-title {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .my-title {
+            font-size: 10px;
+        }
+        a[href="https://google.com"] {
+            color: purple;
+        }
+        /* class보다 id가 우선순위가 높다 */
+        /* 특별한 이유가 아니라면 id는 쓰지 말고 class를 쓰자 */
+        /* nth-child(even) 짝수번째 */
+        /* nth-child(odd) 홀수번째 */
+        /* nth-child(3n+1) 이런 식으로 수식도 가능, n에는 0부터 1, 2, 3.. 순서대로 대입 */
+    </style>
+
+    </head>
+
+    <body style="background: green;">
+        <article class="pizza-recipe">
+        <header class="header">
+            <h1 class="article-title">맛있는 피자 만들기</h1>
+        </header>
+        <section class="재료">
+            <h2 id="my-title" class="my-title">재료</h2>
+            <ul>
+            <li>밀가루</li>
+            <li>모짜렐라치즈</li>
+            <li>햄</li>
+            </ul>
+            <p>재료에 있는 문단</p>
+        </section>
+        <section class="만드는법">
+            <h2>만드는 법</h2>
+            <p>
+            잘 만듭니다.
+            </p>
+            <a href="https://google.com">This Is a Link</a>
+        </section>
+        </article>
+    </body>
+</html>

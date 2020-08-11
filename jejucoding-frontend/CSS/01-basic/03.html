@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>display: block과 inline</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    html {
+      font-size: 18px;
+    }
+    .width-setter {
+      padding: 30px;
+    }
+    .header {
+      display: block;
+      /* padding: 30px; */
+      background: tomato;
+    }
+    .link {
+      /* display: inline; */
+      /* display: block; */
+      background: skyblue;
+      display: inline-block;
+      padding: 15px;
+    }
+    .재료 {
+      /* padding: 30px; */
+      background: yellow;
+    }
+    .만드는법 {
+      /* padding: 30px; */
+      background: yellowgreen;
+    }
+    .store {
+      /* padding: 30px; */
+      background: dodgerblue;
+    }
+    .page {
+      /* width: 250px; */
+    }
+    img {
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <article class="pizza-recipe">
+      <header class="header width-setter">
+        <h1 class="article-title">
+          <a class="link" href="http://google.com">참고</a>
+          맛있는 피자 만들기
+        </h1>
+      </header>
+      <section class="재료 width-setter">
+        <h2 id="my-title" class="my-title">재료</h2>
+        <ul>
+          <li>밀가루</li>
+          <li>모짜렐라치즈</li>
+          <li>햄</li>
+        </ul>
+        <p>재료에 있는 문단</p>
+      </section>
+      <section class="만드는법 width-setter">
+        <h2>만드는 법</h2>
+        <p>
+          <img src="images/ilbuni.png" alt="">
+          잘 만듭니다.
+        </p>
+      </section>
+    </article>
+    <aside class="store width-setter">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolorum laboriosam molestiae commodi doloribus debitis consectetur, expedita libero omnis, rerum asperiores at dolores voluptas maxime officiis possimus nesciunt beatae quod sequi delectus! Qui dolorum repudiandae soluta facere vitae saepe repellendus deserunt reprehenderit corrupti sequi commodi sapiente adipisci neque minima temporibus maxime debitis animi, officia obcaecati ipsa, explicabo labore! Cumque magni, laudantium sapiente perferendis. Vel amet temporibus accusantium enim nihil consectetur voluptatum ab porro. Est at consectetur numquam ipsa. Quam modi culpa vero vel quo eveniet illo ad ducimus, mollitia alias possimus commodi eius sapiente natus aspernatur nihil eos expedita aut.
+    </aside>
+  </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Transition</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reset.css">
+        <style>
+            @keyframes my-ani {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(2) rotate(180deg);
+                    background-color: dodgerblue;
+                }
+                /* 75% {
+                    transform: scale(2) rotate(360deg);
+                } */
+                100% {
+                    background-color: yellow;
+                    transform: scale(3) translate(100px, 100px);
+                }
+            }
+            .circle {
+                position: absolute;
+                left: 100px;
+                top: 100px;
+                width: 100px;
+                height: 100px;
+                background-color: #ffaa00;
+                animation: my-ani 2s infinite alternate;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="circle"></div>
+    </body>
+</html>
