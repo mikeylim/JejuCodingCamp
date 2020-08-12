@@ -1,0 +1,100 @@
+[]
+•
+*
+-
+
+[[Jeju Coding Base Camp (5 yrs~)]] -- DAY 3
+
+외주 문서
+ex)
+[과업지시서] - 온라인플랫폼 구축
+// 온라인 플랫폼 구축사업 제안요청서
+과업기간: 계약일로부터 4개월 이내
+계약방식: 입찰공고
+소요예산: 6700만원
+
+2. 과업 주요내용
+- 웹 표준, 웹 호환성, 웹 접근성
+-최적화된 반응형웹
+-콘텐츠 관리시스템 (CMS)
+
+5. 과업 수행지침
+
+
+[Bootstrap4]
+• 개요
+- CSS library with Easy-to-use tools repetitively
+
+• integrity = unique ID
+
+• container
+- mobile responsive web의 breakpoint를 위해 사용
+
+* 모든 홈페이지는 12개로 자를 수 있다 (Table with 12 columns)
+
+1                                                12
+로고(2)                메뉴1(7) 메뉴2(8) 메뉴3(9) 메뉴4(10)
+이미지슬라이드(12)
+팀소개   팀소개   팀소개   팀소개            .container
+팀소개   팀소개   팀소개   팀소개            .container
+
+
+• img
+- img-fluid
+- rounded
+- rounded-fluid
+- img-thumbnail
+
+• Carousel
+
+• Modal
+- popup = 새 페이지 (차단) / modal
+- script 바로 위에 넣음
+
+• Icons = Font Awesome / Google Fonts
+- Icons are Fonts
+- CDN 혹은 다운로드
+
+
+
+[Python]
+- 고급 프로그래밍 언어 (high-level programming language)
+- 내가 의도한 바를 정확하고 효율적으로 기계가 수행할수 있게 하는것
+1. 배우기 쉽다
+2. 쉽고 빠르게 개발 (인터프리터 언어) = 컴파일러 - 안정적
+3. 오픈소스, 무료, 무수한 자료 (GUI, Web, System Utility, IoT, Data Analysis, Game development)
+
+백엔드
+FE,BE, Cloud, Version, App, DB, Crawling, Version control, AI (Tensor Flow)
+
+* low-level programming language = ex) assembly
+
+• Google Colab
+1. .ipynb 으로 저장
+2. jupyter notebook 사용
+
+
+• String method
+.find - no error
+.index - causes error
+
+• Most common way to format print
+print('제 이름은 {}입니다. 나이는 {}입니다'.format('ㅇ',10))
+print(f'제 이름은 {이름}. 나이는 {나이}입니다')
+
+
+*** Use dir([]) to find the useful methods
+
+int
+float
+bool
+|-list
+|tuple
+|set
+|-dict
+2
+
+[Trend]
+React
+Angular
+Vue
