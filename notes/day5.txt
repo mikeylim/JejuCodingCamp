@@ -26,3 +26,46 @@
 
 [Git]
 - 버전 관리 시스템
+
+git pull = 다른 사람의 수정한것을 모두 받음
+git commit -m "" = 27번쨰 코드에 질병관리 본부 데이터를 수정
+
+nginx - 파일을 서빙해줌
+apache - 파일을 서빙해줌
+apt - ubuntu package를 관리함
+
+pip = python package를 관리함
+pip install --upgrade pip = upgrade pip
+mkdir mysite
+cd mysite
+pip3 install virtualenv = 필수 - ex) 가상의 컴퓨터를 구동시킴 - 밖의 환경에 영향을 받지않음
+virtualenv myvenv = 나의 virtual environment
+pip list = 초기화된 가상환경의 설정
+pip3 install django = 최신의 장고버전이 설치됨
+django-admin startproject testdjango . = 장고 프로젝트가 testdjango 의 이름으로 설치가 됨
+python manage.py migrate = migrate -- python으로 짠 코드를 db에 반영함 (.sqlite3) / 
+
+** Python ORM 기법을 사용하여 DB생성 가능
+
+settings.py -> 28 ALLOWED_HOSTS=['*'] = 화이트 리스트
+python manage.py runserver 0:80 = server를 시작
+
+/admin = admin page를 만들어줌
+
+* 메뉴/페이지 하나하나를 app으로 만듦
+
+python manage.py startapp main = main이라는 app을 만듦 (폴더)
+
+settings.py -> INSTALLED_APPS = [ '...', 'main', ] = main을 추가
+urls.py -> from main.views import index
+urls.py -> urlpatterns = [..., path('', index, name="index"),]
+
+main -> views.py
+    def index(request):
+        return render(request, 'main/index.html')
+
+main -> templates -> main -> index.html
+
+
+0 - 나 자신
+80 - http

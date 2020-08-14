@@ -18,6 +18,7 @@ IP(주소)
 
 PORT(문)
 www.naver.com:443
+http:80
 
 - HTML & CSS -> Bootstrap, etc
 |
