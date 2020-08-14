@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #map {
+            width: 50%;
+        }
+        #이호태우 {
+            
+        }
+        .pins {
+            width: 1rem;
+            /* display: inline; */
+            position: absolute;
+            top: 230px;
+            left: 500px;
+        }
+        span {
+            display: none;
+        }
+        .이호태우:onhover span {
+            display: inline;
+            position: absolute;
+            top: 255px;
+            left: 525px;
+        }
+        
+    </style>
+</head>
+<body>
+    <img id="map" src="map.png"  alt="">
+    <img class="pins" id="이호태우" src="pin.png" onclick="showDescription(id)">
+    <span>이호태우</span>
+    
+    <script>
+        function showDescription(x) {
+            const id = x;
+            document.getElementById(id).click();
+            // document.get
+        }
+    </script>
+</body>
+</html>

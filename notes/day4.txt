@@ -1,0 +1,51 @@
+[]
+•
+*
+-
+
+(주니어 개발자)
+- Start from 205~220
+
+* 함수 (function)
+- function을 call(호출) 할때까지 컴퓨터가 코드를 읽지않음
+-
+
+* 지역변수 / 전역변수
+
+* 변수명 - 알아들을수 있게 (full name)
+* 주석처리 없이 함수를 이해할수 있게 naming
+
+* Class
+
+* Crawling
+
+* Image Crawling
+
+*** 파이썬 강좌 (30분)
+
+
+D - Developers / I - Ideas
+D 1. 제주대 - 컴공
+D 2. 제주대 - 컴공
+I 3. 생명 사업모델 -  / 포토존 활용 앱 (기획서)
+DI 4. [강재현] 제주대 - 경제학과, 컴공.교육. / 스터디그룹 찾는 앱: 선택항목, 목표시간, 현재레벨
+D 5. [강진] - 파이썬 경험
+D 6. [김예진] - 2학년. frontend, backend // 먹캣리스트
+I 7. [] 09학번 행정, 유지보수
+I 8. [] 3년 드론강좌, 영상편집 / 드론
+DI 9. [이지원] 생명공학, 컴공복수전공 / 보안,소프트웨어 개발
+10. 나
+D 11. 프론트엔드 개발자 3년차 html,css,javascript,react,vue,mysql
+I 12. [윤영주] 제주대 - 관광관련 , 공기업 ,, 해외인턴십 / photoshop, 디자인
+D 13. [이유창] 업무계열: ai기술팀 정보입력 / python
+I 14. [지웅] 택시 카풀 아이디어
+I 15. [배성은] 제주대 신입생 - 해양생명과학
+D 16. [김현정] 컴공 - 실무경험x 알고리즘동아리-총무 / c언어+++, python / Big Groups acquire/use 쿠폰
+D 17. [유민정] - 숙명여대 - 영어과, 컴공 / 기초 html,css,javascript
+18. 제주대, 주식회사ceo 31살 / 기획.창업. VR비대면 면접서비스 (개발자 고용) / vr비대면면접 플랫폼개발
+19. [함영은] 정보미디어과 python, website-crawling
+20. [김가은] 정보미디아과 html, css ---- frontend design / 영화추천 서비스, hastag이용한 맞춤 영화추천 서비스
+21. [노연우] 제주대2 rohyounwoo.github.io ,, 실리콘밸리-Intern / JS프로젝트, Bootstrap, C#, Python, VR프로젝트
+
+주제-자유 / 기술스텍-자유
+8/14/20 - 15시제출
