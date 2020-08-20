@@ -1,0 +1,137 @@
+[]
+•
+*
+-
+
+Django: Best way to study MVC
+환경 (window & linux)
+
+[챗봇 - 버튼형]
+여러 질의에 답변 ({dict})
+챗봇 만들기
+
+
+pip = python package 툴
+
+가상환경 = 스케일업을 할때 소스코드를 복사하면 환경이 다르면 실행이 안됨으로, 원래 컴퓨터환경이 아닌 가상환경을 옮김.
+        = 밖의 환경의 영향을 안받음 (다른 컴퓨터를 만듦)
+
+MIDDLEWARE = request (user) -> django -> app -> views.py 
+             response  <- django <-  app    <-
+
+
+기획단계 = 1. URL 2. Model
+
+Spring | M V C
+Django | M T V
+
+M
+T - .html
+V - controller (두뇌) / DB
+
+[Models]
+models.Model -- db에 쓸 Field들을 inherit한다.
+blank=True -- db가 비어있어도 괜찮다 (사용자가 입력 안해도 괜찮음)
+null=True -- 비어있는 값 (응급처방)
+
+
+(makemigration) (migrate)
+python   ->   python-SQL    ->  DB
+         |                   |
+    makemigrations        migrate
+
+render = python 문법을 plain text로 바꿔준 후에 html 문법으로 다시 바꿔서 유저한테 준다.
+
+
+template tag = 
+{% %} -> 구문
+{{ }} -> 변수
+
+* static file = 항상 똑같은 file을 serving하는 파일
+
+
+{{ cafeobj.contents | linebreaks }} -- 모두다 텍스트로 변환
+
+---------------------------------------------------------------------------
+
+// pip install request
+pip install --upgrade pip
+mkdir mysite
+cd mysite // 필수
+pip install virtualenv
+virtualenv myenv
+source myenv/bin/activate // 필수
+pip3 install django==3.1
+django-admin startproject testdjango .
+python manage.py migrate
+-- settings.py -> ALLOWED_HOSTS = ['*']
+python manage.py runserver (0:80)
+-- 프로젝트 -> 실행URL과 PORT > URL 클릭
+python manage.py startapp main
+-- settings.py -> INSTALL_APPS = [ ... , main,]
+
+-- views.py
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'main/index.html')
+
+def blog(request):
+    pass
+
+def postdetails(request, pk):
+    pass
+
+-- urls.py -> from main.views import index -> path('', index),
+
+-- main > templates > main > index.html
+
+-- models.py
+from django.db import models
+
+class Post(models.Model):
+    postname = models.CharField(max_length=50)
+    Lat = models.FloatField(null=True)
+    Lng = models.FloatField(null=True)
+    mainphoto = models.ImageField(blank=True, null=True)
+    publishedDate = models.DateTimeField(blank=True, null=True)
+    modifiedDate = models.DateTimeField(blank=True, null=True)
+    contents = models.TextField()
+
+---- 
+
+pip install pillow
+
+python manage.py makemigrations
+python manage.py migrate
+
+-- admin.py
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
+
+----
+python manage.py createsuperuser
+
+
+-- models.py
+==> create post into db
+
+-- views.py
+from .models import Post
+postlist = Post.objects.all()
+
+
+
+
+
+* static files (images)
+-- settings.py
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'

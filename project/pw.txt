@@ -1,0 +1,29 @@
+jejuinjido4
+J7Jcm+ngF+6-Jf
+
+
+
+
+
+paul-lab@naver.com
+ncp!@#123
+
+
+----
+ssh -l root -p 22 101.101.219.249
+
+sudo apt-get update
+sudo apt-get install nginx
+service nginx start
+cd /etc/nginx/sites-available
+// vi default
+cd /var/www/html
+ls
+sudo apt install git
+git clone https://github.com/PilYeooong/jejuinjido.git
+cd jejuinjido
+cd /etc/nginx/sites-available/
+vi default
+INSERT
+root /var/www/html/jejuinjido
+wq!

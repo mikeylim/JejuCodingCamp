@@ -1,9 +1,5 @@
 # docx file
 *.docx
 
-# txt file
-wifi.txt
-cod.txt
-
 # zip file
 *.zip

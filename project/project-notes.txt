@@ -93,5 +93,20 @@ ex) 배민오더
 - hashtag 관련 포스트 *
 - (참고사항) 작년방문자수 -- 월별/년별 *
 - 카드 결제내역 을 이용한 데이터 --
-- 설명
+- 위치 설명
 - 적정
+- 밀집도가 높다면, 추천기능
+
+
+
+- 인스타 hashtag?
+- 라디오버튼
+
+ 
+** Advantages
+- SNS
+
+
+hashtag
+= ig_hashtag_search ==> id
+= recent_search_posts?
